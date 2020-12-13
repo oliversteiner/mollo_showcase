@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains mollo_showcase.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mollo_showcase_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mollo_showcase module.
+    case 'help.page.mollo_showcase':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Showcase Drupal Module for Mollo Events') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mollo_showcase_theme() {
+  return [
+    'mollo_showcase' => [
+      'render element' => 'children',
+    ],
+  ];
+}

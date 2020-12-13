@@ -1,0 +1,4 @@
+mollo_showcase.main:
+  css:
+    theme:
+      assets/css/mollo-showcase.css: {}
