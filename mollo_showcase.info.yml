@@ -4,3 +4,12 @@ description: 'Showcase Drupal Module for Mollo Events'
 core: 8.x
 core_version_requirement: ^8 || ^9
 package: 'Mollo'
+dependencies:
+  - drupal:node
+  - field_group
+  - auto_entitylabel
+  - views_admintools
+  - pathauto
+  - content_translation
+  - mollo_address
+  - mollo_location
